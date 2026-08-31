@@ -20,7 +20,7 @@
 * [Objetivo da Aula](#objetivo-da-aula)
 * [Desenvolvimento do Projeto](#desenvolvimento-do-projeto)
 * [Desenvolva Novos Projetos](#desenvolva-novos-projetos)
-* [Créditos e Referências](#créditos-e-referências)
+* [Referências e Materiais de Apoio](#referências-e-materiais-de-apoio)
 
 ## Introdução
 
@@ -284,24 +284,20 @@ Dentro do arquivo `index.html`, que foi criado na etapa anterior, copie o códig
 
 Abra o arquivo `index.html` em um navegador para visualizar o conteúdo da página. Isso pode ser feito de duas maneiras:
 
-1. Acessando diretamente o arquivo:
-    * Abra o arquivo HTML como faria com qualquer outro arquivo do seu computador.
-2. Utilizando um servidor web local:
-    * Se você possui a extensão Live Server instalada no Visual Studio Code, clique com o botão direito no arquivo e selecione `Open with Live Server`.
-    * Caso não tenha a extensão instalada, é recomendável instalá-la, pois ela facilita o desenvolvimento.
-    * Outra alternativa é iniciar manualmente um servidor web no diretório que contém o arquivo `index.html`. Para isso, execute o comando abaixo:
+* Se você possui a extensão Live Server instalada no Visual Studio Code, clique com o botão direito no arquivo e selecione `Open with Live Server`. Caso não tenha a extensão instalada, é recomendável instalá-la, pois ela facilita o desenvolvimento.
+* Outra alternativa é iniciar manualmente um servidor web no diretório que contém o arquivo `index.html`. Para isso, execute o comando abaixo:
 
-        ```bash
-        cd code
-        python3 -m http.server
-        ```
+    ```bash
+    cd code
+    python3 -m http.server
+    ```
 
-        Se desejar utilizar uma porta específica (por exemplo, 8123), execute:
+    Se desejar utilizar uma porta específica (por exemplo, 8008), execute:
 
-        ```bash
-        cd code
-        python3 -m http.server 8123
-        ```
+    ```bash
+    cd code
+    python3 -m http.server 8008
+    ```
 
 Após iniciar o servidor, abra o navegador e acesse a página.
 
@@ -1096,10 +1092,10 @@ Com os conhecimentos adquiridos em Boostrap, desenvolva novos projetos para prat
 * Desenvolva uma página estática para uma **lanchonete**.
 * Desenvolva uma página estática para uma **academia**.
 
-## Créditos e Referências
+## Referências e Materiais de Apoio
 
 <a href="#índice"><img align="right" width="15" height="15" src="./docs/up-arrow.png" alt="Voltar para topo"></a>
 
 Para aprofundar os estudos sobre Bootstrap, recomenda-se a consulta ao seguinte curso:
 
-* [Curso de Bootstrap - W3Schools](https://www.w3schools.com/bootstrap5/index.php)
+* **Curso de Bootstrap.** [W3Schools - Bootstrap 5.](https://www.w3schools.com/bootstrap5/index.php)
