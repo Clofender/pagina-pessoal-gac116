@@ -13,11 +13,7 @@ function applyTheme(theme) {
     isDark ? "#09090b" : "#fafaf9",
     "important",
   );
-  body.style.setProperty(
-    "color",
-    isDark ? "#f5f5f4" : "#1c1917",
-    "important",
-  );
+  body.style.setProperty("color", isDark ? "#f5f5f4" : "#1c1917", "important");
   localStorage.setItem(themeStorageKey, isDark ? "dark" : "light");
 
   if (themeButton) {
