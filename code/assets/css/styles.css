@@ -1,28 +1,28 @@
 /* Identidade visual em vermelho e preto, adaptada aos dois temas do Bootstrap. */
 :root {
-    --bs-primary: #c1121f;
-    --bs-primary-rgb: 193, 18, 31;
+  --bs-primary: #c1121f;
+  --bs-primary-rgb: 193, 18, 31;
 }
 
 [data-bs-theme="dark"] {
-    --bs-body-bg: #0d0d0d;
-    --bs-body-color: #f4f4f4;
-    --bs-secondary-bg: #171717;
-    --bs-tertiary-bg: #202020;
-    --bs-primary: #ff4655;
-    --bs-primary-rgb: 255, 70, 85;
+  --bs-body-bg: #0d0d0d;
+  --bs-body-color: #f4f4f4;
+  --bs-secondary-bg: #171717;
+  --bs-tertiary-bg: #202020;
+  --bs-primary: #ff4655;
+  --bs-primary-rgb: 255, 70, 85;
 }
 
 /* Ajusta tamanho da imagem de perfil */
 .profile-img {
-    width: 160px;
-    height: 160px;
-    border-radius: 999px;
-    border: 4px solid rgba(255, 255, 255, 0.7);
-    object-fit: cover;
+  width: 160px;
+  height: 160px;
+  border-radius: 999px;
+  border: 4px solid rgba(255, 255, 255, 0.7);
+  object-fit: cover;
 }
 
 /* Melhorar espaçamento do âncora/título (por causa da navbar fixa) */
 section {
-    scroll-margin-top: 90px;
+  scroll-margin-top: 90px;
 }

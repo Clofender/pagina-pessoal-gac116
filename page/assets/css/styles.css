@@ -1,208 +1,248 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:wght@700&display=swap");
 
 body {
-    font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 .font-display {
-    font-family: 'Libre Baskerville', Georgia, serif;
+  font-family: "Libre Baskerville", Georgia, serif;
 }
 
 .profile-img {
-    width: 176px;
-    height: 176px;
-    border-radius: 999px;
-    border: 6px solid #fff;
-    object-fit: cover;
+  width: 176px;
+  height: 176px;
+  border-radius: 999px;
+  border: 6px solid #fff;
+  object-fit: cover;
 }
 
 .dark .profile-img {
-    border-color: #27272a;
+  border-color: #27272a;
 }
 
 .nav-link,
 .contact-link,
 .project-link {
-    transition: color 160ms ease;
+  transition: color 160ms ease;
 }
 
 .nav-link:hover,
 .contact-link:hover,
 .project-link:hover {
-    color: #c1121f;
+  color: #c1121f;
 }
 
 .button {
-    display: inline-flex;
-    align-items: center;
-    gap: .55rem;
-    border-radius: .4rem;
-    padding: .7rem 1rem;
-    font-size: .875rem;
-    font-weight: 700;
-    transition: transform 160ms ease, background-color 160ms ease, border-color 160ms ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  border-radius: 0.4rem;
+  padding: 0.7rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  transition:
+    transform 160ms ease,
+    background-color 160ms ease,
+    border-color 160ms ease;
 }
 
 .button:hover {
-    transform: translateY(-2px);
+  transform: translateY(-2px);
 }
 
 .button-primary {
-    background: #c1121f;
-    color: #fff;
+  background: #c1121f;
+  color: #fff;
 }
 
 .button-primary:hover {
-    background: #a30f1a;
+  background: #a30f1a;
 }
 
 .button-outline,
 .button-muted {
-    border: 1px solid #cbd5e1;
+  border: 1px solid #cbd5e1;
 }
 
 .button-outline {
-    color: #a30f1a;
+  color: #a30f1a;
 }
 
 .button-outline:hover {
-    border-color: #c1121f;
-    background: #fff1f2;
+  border-color: #c1121f;
+  background: #fff1f2;
 }
 
 .button-muted:hover {
-    border-color: #c1121f;
-    color: #a30f1a;
+  border-color: #c1121f;
+  color: #a30f1a;
 }
 
 .dark .button-outline,
 .dark .button-muted {
-    border-color: #52525b;
+  border-color: #52525b;
 }
 
 .dark .button-outline:hover,
 .dark .button-muted:hover {
-    background: #27272a;
-    color: #fca5a5;
+  background: #27272a;
+  color: #fca5a5;
 }
 
 .info-panel,
 .content-panel {
-    border: 1px solid #e7e5e4;
-    border-radius: .5rem;
-    background: rgba(255, 255, 255, .72);
-    padding: 1.5rem;
+  border: 1px solid #e7e5e4;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.72);
+  padding: 1.5rem;
 }
 
 .dark .info-panel,
 .dark .content-panel {
-    border-color: #3f3f46;
-    background: rgba(24, 24, 27, .82);
+  border-color: #3f3f46;
+  background: rgba(24, 24, 27, 0.82);
 }
 
 .info-panel p,
 .content-panel p {
-    margin-top: .65rem;
-    line-height: 1.7;
+  margin-top: 0.65rem;
+  line-height: 1.7;
 }
 
 .content-panel h3 {
-    margin-bottom: 1.1rem;
-    font-weight: 700;
+  margin-bottom: 1.1rem;
+  font-weight: 700;
 }
 
 .muted-text {
-    color: #57534e;
+  color: #57534e;
 }
 
 .dark .muted-text {
-    color: #a8a29e;
+  color: #a8a29e;
 }
 
 .section-heading {
-    margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .section-heading h2 {
-    font-family: 'Libre Baskerville', Georgia, serif;
-    font-size: 1.6rem;
-    font-weight: 700;
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: 1.6rem;
+  font-weight: 700;
 }
 
 .section-heading p {
-    margin-top: .35rem;
-    color: #78716c;
+  margin-top: 0.35rem;
+  color: #78716c;
 }
 
 .dark .section-heading p {
-    color: #a8a29e;
+  color: #a8a29e;
 }
 
 .tag {
-    display: inline-flex;
-    align-items: center;
-    border-radius: 999px;
-    padding: .35rem .7rem;
-    font-size: .75rem;
-    font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 0.35rem 0.7rem;
+  font-size: 0.75rem;
+  font-weight: 700;
 }
 
 .tag-primary {
-    background: #fee2e2;
-    color: #991b1b;
+  background: #fee2e2;
+  color: #991b1b;
 }
 
 .tag-neutral {
-    background: #e7e5e4;
-    color: #44403c;
+  background: #e7e5e4;
+  color: #44403c;
 }
 
 .dark .tag-primary {
-    background: #450a0a;
-    color: #fecaca;
+  background: #450a0a;
+  color: #fecaca;
 }
 
 .dark .tag-neutral {
-    background: #3f3f46;
-    color: #e7e5e4;
+  background: #3f3f46;
+  color: #e7e5e4;
 }
 
 .content-panel hr {
-    margin: 1.4rem 0;
-    border-color: #e7e5e4;
+  margin: 1.4rem 0;
+  border-color: #e7e5e4;
 }
 
 .dark .content-panel hr {
-    border-color: #3f3f46;
+  border-color: #3f3f46;
 }
 
 .skill-label {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: .5rem;
-    font-size: .875rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
 }
 
 .skill-track {
-    height: .55rem;
-    overflow: hidden;
-    border-radius: 999px;
-    background: #e7e5e4;
+  height: 0.55rem;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #e7e5e4;
 }
 
 .dark .skill-track {
-    background: #3f3f46;
+  background: #3f3f46;
 }
 
 .skill-fill {
-    height: 100%;
-    border-radius: inherit;
-    background: #c1121f;
+  height: 100%;
+  border-radius: inherit;
+  background: #c1121f;
+}
+
+.dark body {
+  background-color: #09090b !important;
+  color: #f5f5f4 !important;
+}
+
+.dark nav,
+.dark #navContent {
+  border-color: #27272a !important;
+  background-color: rgba(9, 9, 11, 0.95) !important;
+}
+
+.dark footer {
+  border-color: #27272a !important;
+}
+
+.dark .bg-stone-200 {
+  background-color: #27272a !important;
+  color: #e7e5e4 !important;
+}
+
+.dark .text-red-700 {
+  color: #f87171 !important;
+}
+
+.dark .text-stone-300,
+.dark .text-stone-400,
+.dark .text-stone-500,
+.dark .text-stone-600,
+.dark .text-stone-700 {
+  color: #d6d3d1 !important;
+}
+
+.dark .border-stone-200,
+.dark .border-stone-300 {
+  border-color: #3f3f46 !important;
 }
 
 @media (max-width: 640px) {
-    .profile-img {
-        width: 144px;
-        height: 144px;
-    }
+  .profile-img {
+    width: 144px;
+    height: 144px;
+  }
 }

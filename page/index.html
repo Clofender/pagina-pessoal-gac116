@@ -1,130 +1,437 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Portfólio pessoal de Daniel Silva Ferraz Neto.">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Portfólio pessoal de Daniel Silva Ferraz Neto."
+    />
     <title>Daniel Silva Ferraz Neto | Portfólio Tailwind</title>
 
-    <script>
-        tailwind.config = {
-            config: {
-                darkMode: "class",
-                theme: {
-                    extend: {
-                        colors: {
-                            brand: {
-                                500: "#c1121f",
-                                600: "#a30f1a",
-                                700: "#870c15"
-                            }
-                        },
-                        fontFamily: {
-                            display: ["Georgia", "serif"]
-                        }
-                    }
-                }
-            }
-        };
-    </script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
 
-<body class="bg-stone-50 text-stone-900 transition-colors dark:bg-zinc-950 dark:text-stone-100">
-    <nav class="sticky top-0 z-10 border-b border-stone-200/90 bg-stone-50/95 backdrop-blur dark:border-zinc-800 dark:bg-zinc-950/95">
-        <div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 lg:px-8">
-            <a class="font-display text-xl font-bold tracking-tight text-red-700 dark:text-red-400" href="#top">
-                <i class="fa-solid fa-code mr-2 text-sm"></i>Daniel Neto
-            </a>
-            <div class="flex items-center gap-3">
-                <button id="themeToggle" class="rounded-full border border-stone-300 px-3 py-2 text-sm transition hover:border-red-700 hover:text-red-700 dark:border-zinc-700 dark:hover:text-red-400" type="button" aria-label="Ativar tema escuro" title="Alternar tema">
-                    <i class="fa-solid fa-moon"></i>
-                </button>
-                <button id="menuToggle" class="rounded border border-stone-300 px-3 py-2 lg:hidden dark:border-zinc-700" type="button" aria-controls="navContent" aria-expanded="false" aria-label="Abrir menu">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-            </div>
-            <div id="navContent" class="absolute left-0 right-0 top-full hidden border-b border-stone-200 bg-stone-50 px-5 py-4 dark:border-zinc-800 dark:bg-zinc-950 lg:static lg:block lg:border-0 lg:bg-transparent lg:p-0 dark:lg:bg-transparent">
-                <ul class="flex flex-col gap-3 text-sm font-medium lg:flex-row lg:items-center lg:gap-6">
-                    <li><a class="nav-link" href="#sobre">Sobre</a></li>
-                    <li><a class="nav-link" href="#habilidades">Habilidades</a></li>
-                    <li><a class="nav-link" href="#projetos">Projetos</a></li>
-                    <li><a class="nav-link" href="#interesses">Interesses</a></li>
-                    <li><a class="nav-link" href="#contato">Contato</a></li>
-                </ul>
-            </div>
+  <body
+    class="bg-stone-50 text-stone-900 transition-colors"
+  >
+    <nav
+      class="sticky top-0 z-10 border-b border-stone-200/90 bg-stone-50/95 backdrop-blur"
+    >
+      <div
+        class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 lg:px-8"
+      >
+        <a
+          class="font-display text-xl font-bold tracking-tight text-red-700"
+          href="#top"
+        >
+          <i class="fa-solid fa-code mr-2 text-sm"></i>Daniel Neto
+        </a>
+        <div class="flex items-center gap-3">
+          <button
+            id="themeToggle"
+            class="rounded-full border border-stone-300 px-3 py-2 text-sm transition hover:border-red-700 hover:text-red-700"
+            type="button"
+            aria-label="Ativar tema escuro"
+            title="Alternar tema"
+          >
+            <i class="fa-solid fa-moon"></i>
+          </button>
+          <button
+            id="menuToggle"
+            class="rounded border border-stone-300 px-3 py-2 lg:hidden"
+            type="button"
+            aria-controls="navContent"
+            aria-expanded="false"
+            aria-label="Abrir menu"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
         </div>
+        <div
+          id="navContent"
+          class="absolute left-0 right-0 top-full hidden border-b border-stone-200 bg-stone-50 px-5 py-4 lg:static lg:block lg:border-0 lg:bg-transparent lg:p-0"
+        >
+          <ul
+            class="flex flex-col gap-3 text-sm font-medium lg:flex-row lg:items-center lg:gap-6"
+          >
+            <li><a class="nav-link" href="#sobre">Sobre</a></li>
+            <li><a class="nav-link" href="#habilidades">Habilidades</a></li>
+            <li><a class="nav-link" href="#projetos">Projetos</a></li>
+            <li><a class="nav-link" href="#interesses">Interesses</a></li>
+            <li><a class="nav-link" href="#contato">Contato</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
     <header id="top" class="mx-auto max-w-6xl px-5 py-16 lg:px-8 lg:py-24">
-        <div class="grid items-center gap-12 lg:grid-cols-[280px_1fr]">
-            <div class="text-center">
-                <img class="profile-img mx-auto shadow-xl" src="../../code/assets/img/foto.jpeg" alt="Foto de perfil de Daniel Silva Ferraz Neto">
-                <div class="mt-5 flex justify-center gap-2 text-xs font-semibold uppercase tracking-wide">
-                    <span class="rounded-full bg-red-700 px-3 py-1.5 text-white">Ciência da Computação</span>
-                    <span class="rounded-full bg-stone-200 px-3 py-1.5 text-stone-700 dark:bg-zinc-800 dark:text-stone-200">UFLA</span>
-                </div>
-            </div>
-            <div>
-                <p class="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-red-700 dark:text-red-400">Portfólio pessoal</p>
-                <h1 class="font-display text-4xl font-bold leading-tight tracking-tight sm:text-5xl">Olá! Eu sou <span class="text-red-700 dark:text-red-400">Daniel Silva Ferraz Neto</span></h1>
-                <p class="mt-6 max-w-3xl text-lg leading-8 text-stone-600 dark:text-stone-300">Desenvolvedor Full Stack, com foco em Front-end, estudante de Ciência da Computação e apaixonado por criar produtos web modernos.</p>
-                <div class="mt-8 flex flex-wrap gap-3">
-                    <a class="button button-primary" href="#projetos"><i class="fa-solid fa-diagram-project"></i>Ver projetos</a>
-                    <a class="button button-outline" href="#contato"><i class="fa-solid fa-envelope"></i>Contato</a>
-                    <a class="button button-muted" href="https://github.com/Clofender" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i>GitHub</a>
-                    <a class="button button-muted" href="https://www.linkedin.com/in/daniel-clofender" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
-                </div>
-                <div class="mt-10 grid gap-4 sm:grid-cols-2">
-                    <div class="info-panel"><strong><i class="fa-solid fa-graduation-cap mr-2 text-red-700"></i>Curso</strong><p>Ciência da Computação - UFLA. Técnico em Redes de Computadores pelo CEFET-MG.</p></div>
-                    <div class="info-panel"><strong><i class="fa-solid fa-bullseye mr-2 text-red-700"></i>Objetivo</strong><p>Consolidar minha carreira como Desenvolvedor Full Stack, criando interfaces de alta conversão e sistemas corporativos robustos.</p></div>
-                </div>
-            </div>
+      <div class="grid items-center gap-12 lg:grid-cols-[280px_1fr]">
+        <div class="text-center">
+          <img
+            class="profile-img mx-auto shadow-xl"
+            src="../../code/assets/img/foto.jpeg"
+            alt="Foto de perfil de Daniel Silva Ferraz Neto"
+          />
+          <div
+            class="mt-5 flex justify-center gap-2 text-xs font-semibold uppercase tracking-wide"
+          >
+            <span class="rounded-full bg-red-700 px-3 py-1.5 text-white"
+              >Ciência da Computação</span
+            >
+            <span
+              class="rounded-full bg-stone-200 px-3 py-1.5 text-stone-700"
+              >UFLA</span
+            >
+          </div>
         </div>
+        <div>
+          <p
+            class="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-red-700"
+          >
+            Portfólio pessoal
+          </p>
+          <h1
+            class="font-display text-4xl font-bold leading-tight tracking-tight sm:text-5xl"
+          >
+            Olá! Eu sou
+            <span class="text-red-700"
+              >Daniel Silva Ferraz Neto</span
+            >
+          </h1>
+          <p
+            class="mt-6 max-w-3xl text-lg leading-8 text-stone-600"
+          >
+            Desenvolvedor Full Stack, com foco em Front-end, estudante de
+            Ciência da Computação e apaixonado por criar produtos web modernos.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a class="button button-primary" href="#projetos"
+              ><i class="fa-solid fa-diagram-project"></i>Ver projetos</a
+            >
+            <a class="button button-outline" href="#contato"
+              ><i class="fa-solid fa-envelope"></i>Contato</a
+            >
+            <a
+              class="button button-muted"
+              href="https://github.com/Clofender"
+              target="_blank"
+              rel="noreferrer"
+              ><i class="fa-brands fa-github"></i>GitHub</a
+            >
+            <a
+              class="button button-muted"
+              href="https://www.linkedin.com/in/daniel-clofender"
+              target="_blank"
+              rel="noreferrer"
+              ><i class="fa-brands fa-linkedin"></i>LinkedIn</a
+            >
+          </div>
+          <div class="mt-10 grid gap-4 sm:grid-cols-2">
+            <div class="info-panel">
+              <strong
+                ><i class="fa-solid fa-graduation-cap mr-2 text-red-700"></i
+                >Curso</strong
+              >
+              <p>
+                Ciência da Computação - UFLA. Técnico em Redes de Computadores
+                pelo CEFET-MG.
+              </p>
+            </div>
+            <div class="info-panel">
+              <strong
+                ><i class="fa-solid fa-bullseye mr-2 text-red-700"></i
+                >Objetivo</strong
+              >
+              <p>
+                Consolidar minha carreira como Desenvolvedor Full Stack, criando
+                interfaces de alta conversão e sistemas corporativos robustos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
 
     <main class="mx-auto max-w-6xl space-y-20 px-5 pb-20 lg:px-8">
-        <section id="sobre" class="scroll-mt-24">
-            <div class="section-heading"><h2>Sobre</h2><p>Uma breve descrição do estudante e trajetória.</p></div>
-            <div class="grid gap-6 lg:grid-cols-[1.4fr_1fr]">
-                <article class="content-panel"><p>Sou estudante de Ciência da Computação na UFLA e atuo na OPER como Desenvolvedor Full Stack (Estagiário), com foco na construção de interfaces modernas e responsivas.</p><p class="muted-text">Trabalho com Docker, NestJS, contratos de API e modelagem de banco de dados com Prisma. Tenho formação técnica em Redes de Computadores pelo CEFET-MG e experiência anterior em relacionamento com clientes e negócios.</p></article>
-                <article class="content-panel"><h3>Informações rápidas</h3><ul class="space-y-3"><li><i class="fa-solid fa-location-dot mr-2 text-red-700"></i><strong>Cidade:</strong> Lavras, MG</li><li><i class="fa-solid fa-language mr-2 text-red-700"></i><strong>Idiomas:</strong> Português (nativo), Inglês (técnico)</li><li><i class="fa-solid fa-laptop-code mr-2 text-red-700"></i><strong>Área:</strong> Engenharia de Software / Full Stack</li></ul></article>
+      <section id="sobre" class="scroll-mt-24">
+        <div class="section-heading">
+          <h2>Sobre</h2>
+          <p>Uma breve descrição do estudante e trajetória.</p>
+        </div>
+        <div class="grid gap-6 lg:grid-cols-[1.4fr_1fr]">
+          <article class="content-panel">
+            <p>
+              Sou estudante de Ciência da Computação na UFLA e atuo na OPER como
+              Desenvolvedor Full Stack (Estagiário), com foco na construção de
+              interfaces modernas e responsivas.
+            </p>
+            <p class="muted-text">
+              Trabalho com Docker, NestJS, contratos de API e modelagem de banco
+              de dados com Prisma. Tenho formação técnica em Redes de
+              Computadores pelo CEFET-MG e experiência anterior em
+              relacionamento com clientes e negócios.
+            </p>
+          </article>
+          <article class="content-panel">
+            <h3>Informações rápidas</h3>
+            <ul class="space-y-3">
+              <li>
+                <i class="fa-solid fa-location-dot mr-2 text-red-700"></i
+                ><strong>Cidade:</strong> Lavras, MG
+              </li>
+              <li>
+                <i class="fa-solid fa-language mr-2 text-red-700"></i
+                ><strong>Idiomas:</strong> Português (nativo), Inglês (técnico)
+              </li>
+              <li>
+                <i class="fa-solid fa-laptop-code mr-2 text-red-700"></i
+                ><strong>Área:</strong> Engenharia de Software / Full Stack
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="habilidades" class="scroll-mt-24">
+        <div class="section-heading">
+          <h2>Habilidades</h2>
+          <p>Tecnologias e competências.</p>
+        </div>
+        <div class="grid gap-6 lg:grid-cols-2">
+          <article class="content-panel">
+            <h3>Tecnologias</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="tag tag-primary">TypeScript</span
+              ><span class="tag tag-primary">React / Next.js</span
+              ><span class="tag tag-primary">Tailwind CSS</span
+              ><span class="tag tag-neutral">NestJS / Node.js</span
+              ><span class="tag tag-neutral">Prisma / SQLite</span
+              ><span class="tag tag-neutral">Docker / Git</span
+              ><span class="tag tag-neutral">Tauri / Rust</span>
             </div>
-        </section>
-
-        <section id="habilidades" class="scroll-mt-24">
-            <div class="section-heading"><h2>Habilidades</h2><p>Tecnologias e competências.</p></div>
-            <div class="grid gap-6 lg:grid-cols-2">
-                <article class="content-panel"><h3>Tecnologias</h3><div class="flex flex-wrap gap-2"><span class="tag tag-primary">TypeScript</span><span class="tag tag-primary">React / Next.js</span><span class="tag tag-primary">Tailwind CSS</span><span class="tag tag-neutral">NestJS / Node.js</span><span class="tag tag-neutral">Prisma / SQLite</span><span class="tag tag-neutral">Docker / Git</span><span class="tag tag-neutral">Tauri / Rust</span></div><hr><h3>Competências</h3><ul class="list-disc space-y-2 pl-5"><li>Desenvolvimento web Full Stack</li><li>Contratos de API e modelagem de dados</li><li>UI/UX e layouts de alta conversão</li><li>Infraestrutura básica com Docker</li></ul></article>
-                <article class="content-panel"><h3>Nível de familiaridade</h3><div class="space-y-5"><div><div class="skill-label"><span>HTML</span><span>90%</span></div><div class="skill-track"><div class="skill-fill w-[90%]"></div></div></div><div><div class="skill-label"><span>CSS / Tailwind CSS</span><span>85%</span></div><div class="skill-track"><div class="skill-fill w-[85%]"></div></div></div><div><div class="mb-2 flex justify-between text-sm"><span>JavaScript / TypeScript</span><span>85%</span></div><div class="skill-track"><div class="skill-fill w-[85%]"></div></div></div></div></article>
+            <hr />
+            <h3>Competências</h3>
+            <ul class="list-disc space-y-2 pl-5">
+              <li>Desenvolvimento web Full Stack</li>
+              <li>Contratos de API e modelagem de dados</li>
+              <li>UI/UX e layouts de alta conversão</li>
+              <li>Infraestrutura básica com Docker</li>
+            </ul>
+          </article>
+          <article class="content-panel">
+            <h3>Nível de familiaridade</h3>
+            <div class="space-y-5">
+              <div>
+                <div class="skill-label"><span>HTML</span><span>90%</span></div>
+                <div class="skill-track">
+                  <div class="skill-fill w-[90%]"></div>
+                </div>
+              </div>
+              <div>
+                <div class="skill-label">
+                  <span>CSS / Tailwind CSS</span><span>85%</span>
+                </div>
+                <div class="skill-track">
+                  <div class="skill-fill w-[85%]"></div>
+                </div>
+              </div>
+              <div>
+                <div class="mb-2 flex justify-between text-sm">
+                  <span>JavaScript / TypeScript</span><span>85%</span>
+                </div>
+                <div class="skill-track">
+                  <div class="skill-fill w-[85%]"></div>
+                </div>
+              </div>
             </div>
-        </section>
+          </article>
+        </div>
+      </section>
 
-        <section id="projetos" class="scroll-mt-24">
-            <div class="section-heading"><h2>Projetos</h2><p>Alguns trabalhos já desenvolvidos.</p></div>
-            <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-                <article class="content-panel flex flex-col"><div class="flex flex-wrap items-start justify-between gap-2"><h3>Desafio OperData - Pombo Correio</h3><div class="flex flex-wrap gap-1"><span class="tag tag-neutral">NestJS</span><span class="tag tag-neutral">React</span><span class="tag tag-neutral">Docker</span></div></div><p class="muted-text">Aplicação fullstack para gerenciar um serviço lúdico de delivery aéreo utilizando pombos-correio.</p><ul class="mb-6 list-disc space-y-1 pl-5 text-sm"><li>API REST e regras de negócio</li><li>Interface reativa</li><li>Containerização ponta a ponta</li></ul><a class="project-link mt-auto" href="https://github.com/Clofender/Desafio-OperData-PomboCorreio" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i>Repositório</a></article>
-                <article class="content-panel flex flex-col"><div class="flex flex-wrap items-start justify-between gap-2"><h3>Projetos Full Stack - OPER</h3><div class="flex flex-wrap gap-1"><span class="tag tag-neutral">HTML</span><span class="tag tag-neutral">Bootstrap</span><span class="tag tag-neutral">Prisma</span></div></div><p class="muted-text">Desenvolvimento de sistemas corporativos de ponta a ponta durante o estágio na OPER.</p><ul class="mb-6 list-disc space-y-1 pl-5 text-sm"><li>Contratos de API</li><li>Modelagem com schema.prisma</li><li>Integração de stacks modernas</li></ul><span class="mt-auto text-sm text-stone-500 dark:text-stone-400">Projeto privado</span></article>
-                <article class="content-panel flex flex-col"><div class="flex items-start justify-between gap-3"><h3>SoundPad Remastered</h3><span class="tag tag-neutral">Tauri / Rust</span></div><p class="muted-text">Releitura moderna, leve e open-source de um Soundboard clássico para desktop.</p><ul class="mb-6 list-disc space-y-1 pl-5 text-sm"><li>Atalhos globais com Rust</li><li>Reprodução de áudio sem latência</li><li>WebView2 e dispositivos virtuais</li></ul><a class="project-link mt-auto" href="https://github.com/Clofender/SoundPad-Remastered" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i>Repositório</a></article>
+      <section id="projetos" class="scroll-mt-24">
+        <div class="section-heading">
+          <h2>Projetos</h2>
+          <p>Alguns trabalhos já desenvolvidos.</p>
+        </div>
+        <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <article class="content-panel flex flex-col">
+            <div class="flex flex-wrap items-start justify-between gap-2">
+              <h3>Desafio OperData - Pombo Correio</h3>
+              <div class="flex flex-wrap gap-1">
+                <span class="tag tag-neutral">NestJS</span
+                ><span class="tag tag-neutral">React</span
+                ><span class="tag tag-neutral">Docker</span>
+              </div>
             </div>
-        </section>
+            <p class="muted-text">
+              Aplicação fullstack para gerenciar um serviço lúdico de delivery
+              aéreo utilizando pombos-correio.
+            </p>
+            <ul class="mb-6 list-disc space-y-1 pl-5 text-sm">
+              <li>API REST e regras de negócio</li>
+              <li>Interface reativa</li>
+              <li>Containerização ponta a ponta</li>
+            </ul>
+            <a
+              class="project-link mt-auto"
+              href="https://github.com/Clofender/Desafio-OperData-PomboCorreio"
+              target="_blank"
+              rel="noreferrer"
+              ><i class="fa-brands fa-github"></i>Repositório</a
+            >
+          </article>
+          <article class="content-panel flex flex-col">
+            <div class="flex flex-wrap items-start justify-between gap-2">
+              <h3>Projetos Full Stack - OPER</h3>
+              <div class="flex flex-wrap gap-1">
+                <span class="tag tag-neutral">HTML</span
+                ><span class="tag tag-neutral">Bootstrap</span
+                ><span class="tag tag-neutral">Prisma</span>
+              </div>
+            </div>
+            <p class="muted-text">
+              Desenvolvimento de sistemas corporativos de ponta a ponta durante
+              o estágio na OPER.
+            </p>
+            <ul class="mb-6 list-disc space-y-1 pl-5 text-sm">
+              <li>Contratos de API</li>
+              <li>Modelagem com schema.prisma</li>
+              <li>Integração de stacks modernas</li>
+            </ul>
+            <span class="mt-auto text-sm text-stone-500"
+              >Projeto privado</span
+            >
+          </article>
+          <article class="content-panel flex flex-col">
+            <div class="flex items-start justify-between gap-3">
+              <h3>SoundPad Remastered</h3>
+              <span class="tag tag-neutral">Tauri / Rust</span>
+            </div>
+            <p class="muted-text">
+              Releitura moderna, leve e open-source de um Soundboard clássico
+              para desktop.
+            </p>
+            <ul class="mb-6 list-disc space-y-1 pl-5 text-sm">
+              <li>Atalhos globais com Rust</li>
+              <li>Reprodução de áudio sem latência</li>
+              <li>WebView2 e dispositivos virtuais</li>
+            </ul>
+            <a
+              class="project-link mt-auto"
+              href="https://github.com/Clofender/SoundPad-Remastered"
+              target="_blank"
+              rel="noreferrer"
+              ><i class="fa-brands fa-github"></i>Repositório</a
+            >
+          </article>
+        </div>
+      </section>
 
-        <section id="interesses" class="scroll-mt-24">
-            <div class="section-heading"><h2>Interesses</h2><p>Áreas que eu gosto de estudar e pesquisar.</p></div>
-            <div class="grid gap-6 lg:grid-cols-2"><article class="content-panel"><ul class="list-disc space-y-2 pl-5"><li>Arquitetura de Software Front-end e Full Stack</li><li>UI/UX e layouts de alta conversão</li><li>Desenvolvimento desktop com Tauri/Rust</li><li>Ferramentas e integrações com Inteligência Artificial</li><li>Gestão do conhecimento e transformação digital</li></ul></article><article class="content-panel"><h3>Atividades</h3><p class="muted-text">Desenvolvo projetos com React/Node e ferramentas modernas. Fora da tecnologia, pratico musculação e vôlei, jogo Valorant e cultivo plantas.</p><div class="flex flex-wrap gap-2"><span class="tag tag-neutral"><i class="fa-solid fa-book mr-1"></i>Estudos</span><span class="tag tag-neutral"><i class="fa-solid fa-people-group mr-1"></i>Trabalho em equipe</span><span class="tag tag-neutral"><i class="fa-solid fa-terminal mr-1"></i>Projetos práticos</span></div></article></div>
-        </section>
+      <section id="interesses" class="scroll-mt-24">
+        <div class="section-heading">
+          <h2>Interesses</h2>
+          <p>Áreas que eu gosto de estudar e pesquisar.</p>
+        </div>
+        <div class="grid gap-6 lg:grid-cols-2">
+          <article class="content-panel">
+            <ul class="list-disc space-y-2 pl-5">
+              <li>Arquitetura de Software Front-end e Full Stack</li>
+              <li>UI/UX e layouts de alta conversão</li>
+              <li>Desenvolvimento desktop com Tauri/Rust</li>
+              <li>Ferramentas e integrações com Inteligência Artificial</li>
+              <li>Gestão do conhecimento e transformação digital</li>
+            </ul>
+          </article>
+          <article class="content-panel">
+            <h3>Atividades</h3>
+            <p class="muted-text">
+              Desenvolvo projetos com React/Node e ferramentas modernas. Fora da
+              tecnologia, pratico musculação e vôlei, jogo Valorant e cultivo
+              plantas.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="tag tag-neutral"
+                ><i class="fa-solid fa-book mr-1"></i>Estudos</span
+              ><span class="tag tag-neutral"
+                ><i class="fa-solid fa-people-group mr-1"></i>Trabalho em
+                equipe</span
+              ><span class="tag tag-neutral"
+                ><i class="fa-solid fa-terminal mr-1"></i>Projetos
+                práticos</span
+              >
+            </div>
+          </article>
+        </div>
+      </section>
 
-        <section id="contato" class="scroll-mt-24">
-            <div class="section-heading"><h2>Contato</h2><p>Como falar comigo.</p></div>
-            <div class="grid gap-6 lg:grid-cols-2"><article class="content-panel"><ul class="space-y-4"><li><i class="fa-solid fa-envelope mr-2 text-red-700"></i><a class="contact-link" href="mailto:danielsfn1@gmail.com">danielsfn1@gmail.com</a></li><li><i class="fa-brands fa-github mr-2 text-red-700"></i><a class="contact-link" href="https://github.com/Clofender" target="_blank" rel="noreferrer">github.com/Clofender</a></li><li><i class="fa-brands fa-linkedin mr-2 text-red-700"></i><a class="contact-link" href="https://www.linkedin.com/in/daniel-clofender" target="_blank" rel="noreferrer">linkedin.com/in/daniel-clofender</a></li></ul></article><article class="content-panel"><ul class="space-y-4"><li><i class="fa-brands fa-instagram mr-2 text-red-700"></i><a class="contact-link" href="https://instagram.com/daniel_ferraz" target="_blank" rel="noreferrer">instagram.com/daniel_ferraz</a></li></ul></article></div>
-        </section>
+      <section id="contato" class="scroll-mt-24">
+        <div class="section-heading">
+          <h2>Contato</h2>
+          <p>Como falar comigo.</p>
+        </div>
+        <div class="grid gap-6 lg:grid-cols-2">
+          <article class="content-panel">
+            <ul class="space-y-4">
+              <li>
+                <i class="fa-solid fa-envelope mr-2 text-red-700"></i
+                ><a class="contact-link" href="mailto:danielsfn1@gmail.com"
+                  >danielsfn1@gmail.com</a
+                >
+              </li>
+              <li>
+                <i class="fa-brands fa-github mr-2 text-red-700"></i
+                ><a
+                  class="contact-link"
+                  href="https://github.com/Clofender"
+                  target="_blank"
+                  rel="noreferrer"
+                  >github.com/Clofender</a
+                >
+              </li>
+              <li>
+                <i class="fa-brands fa-linkedin mr-2 text-red-700"></i
+                ><a
+                  class="contact-link"
+                  href="https://www.linkedin.com/in/daniel-clofender"
+                  target="_blank"
+                  rel="noreferrer"
+                  >linkedin.com/in/daniel-clofender</a
+                >
+              </li>
+            </ul>
+          </article>
+          <article class="content-panel">
+            <ul class="space-y-4">
+              <li>
+                <i class="fa-brands fa-instagram mr-2 text-red-700"></i
+                ><a
+                  class="contact-link"
+                  href="https://instagram.com/daniel_ferraz"
+                  target="_blank"
+                  rel="noreferrer"
+                  >instagram.com/daniel_ferraz</a
+                >
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
     </main>
 
-    <footer class="border-t border-stone-200 dark:border-zinc-800"><div class="mx-auto flex max-w-6xl flex-col gap-2 px-5 py-6 text-sm text-stone-500 dark:text-stone-400 sm:flex-row sm:justify-between lg:px-8"><span>&copy; <span id="year"></span> Daniel Silva Ferraz Neto</span><span>Desenvolvido com HTML + Tailwind CSS + JavaScript.</span></div></footer>
+    <footer class="border-t border-stone-200">
+      <div
+        class="mx-auto flex max-w-6xl flex-col gap-2 px-5 py-6 text-sm text-stone-500 sm:flex-row sm:justify-between lg:px-8"
+      >
+        <span>&copy; <span id="year"></span> Daniel Silva Ferraz Neto</span
+        ><span>Desenvolvido com HTML + Tailwind CSS + JavaScript.</span>
+      </div>
+    </footer>
     <script src="assets/js/script.js"></script>
-</body>
-
+  </body>
 </html>

@@ -1,418 +1,570 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR" data-bs-theme="light">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Daniel Silva Ferraz Neto | Portfólio</title>
 
     <!-- Bootstrap 5 (CSS) -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
     <!-- Font Awesome (ícones) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
 
     <!-- CSS do projeto (externo) -->
-    <link rel="stylesheet" href="assets/css/styles.css">
-</head>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
 
-<body class="bg-body">
+  <body class="bg-body">
     <!-- Conteúdo virá aqui -->
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg border-bottom bg-body sticky-top">
-        <div class="container">
-            <a class="navbar-brand fw-semibold" href="#top">
-                <i class="fa-solid fa-code me-2"></i>Daniel Neto
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navContent">
-                <ul class="navbar-nav ms-auto gap-lg-1">
-                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#interesses">Interesses</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-                </ul>
-                <div class="ms-lg-3 d-flex align-items-center gap-2 py-2 py-lg-0">
-                    <span class="small text-secondary d-none d-lg-inline">Tema</span>
-                    <button id="themeToggle" class="btn btn-outline-secondary btn-sm" type="button">
-                        <i class="fa-solid fa-moon"></i>
-                    </button>
-                </div>
-            </div>
+      <div class="container">
+        <a class="navbar-brand fw-semibold" href="#top">
+          <i class="fa-solid fa-code me-2"></i>Daniel Neto
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navContent"
+          aria-controls="navContent"
+          aria-expanded="false"
+          aria-label="Abrir menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navContent">
+          <ul class="navbar-nav ms-auto gap-lg-1">
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#habilidades">Habilidades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projetos">Projetos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#interesses">Interesses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contato">Contato</a>
+            </li>
+          </ul>
         </div>
+        <div class="ms-lg-3 d-flex align-items-center gap-2 py-2 py-lg-0">
+          <span class="small text-secondary d-none d-lg-inline">Tema</span>
+          <button
+            id="themeToggle"
+            class="btn btn-outline-secondary btn-sm"
+            type="button"
+            aria-label="Ativar tema escuro"
+            title="Alternar tema"
+          >
+            <i class="fa-solid fa-moon"></i>
+          </button>
+        </div>
+      </div>
     </nav>
 
     <!-- Header / Informações Básicas -->
     <header id="top" class="py-5">
-        <div class="container">
-            <div class="row align-items-center g-4">
-                <div class="col-12 col-lg-4 text-center">
-                    <img class="profile-img shadow-sm" src="assets/img/foto.jpeg" alt="Foto de perfil de Daniel Silva Ferraz Neto">
-                    <div class="mt-3">
-                        <span class="badge text-bg-primary me-1">Ciência da Computação</span>
-                        <span class="badge text-bg-secondary">UFLA</span>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-8">
-                    <h1 class="display-6 fw-semibold mb-3">
-                        Olá! Eu sou <span class="text-primary">Daniel Silva Ferraz Neto</span>
-                    </h1>
-                    <p class="lead text-secondary mb-4">
-                        Desenvolvedor Full Stack (com foco em Front-end), estudante de Ciência da Computação e apaixonado por criar produtos web modernos.
-                    </p>
-                    <div class="d-flex flex-wrap gap-2">
-                        <a class="btn btn-primary" href="#projetos">
-                            <i class="fa-solid fa-diagram-project me-2"></i>Ver projetos
-                        </a>
-                        <a class="btn btn-outline-primary" href="#contato">
-                            <i class="fa-solid fa-envelope me-2"></i>Contato
-                        </a>
-                        <a class="btn btn-outline-secondary" href="https://github.com/Clofender" target="_blank" rel="noreferrer">
-                            <i class="fa-brands fa-github me-2"></i>GitHub
-                        </a>
-                        <a class="btn btn-outline-secondary" href="https://www.linkedin.com/in/daniel-clofender" target="_blank" rel="noreferrer">
-                            <i class="fa-brands fa-linkedin me-2"></i>LinkedIn
-                        </a>
-                    </div>
-                    <hr class="my-4">
-                    <div class="row g-3">
-                        <div class="col-12 col-md-6">
-                            <div class="p-3 rounded-3 border bg-body-tertiary">
-                                <div class="d-flex align-items-center gap-2 mb-2">
-                                    <i class="fa-solid fa-graduation-cap text-primary"></i>
-                                    <strong>Curso</strong>
-                                </div>
-                                <p class="mb-0 text-secondary">
-                                    Ciência da Computação - Universidade Federal de Lavras (UFLA). Técnico em Redes de Computadores pelo CEFET-MG.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="p-3 rounded-3 border bg-body-tertiary">
-                                <div class="d-flex align-items-center gap-2 mb-2">
-                                    <i class="fa-solid fa-bullseye text-primary"></i>
-                                    <strong>Objetivo</strong>
-                                </div>
-                                <p class="mb-0 text-secondary">
-                                    Consolidar minha carreira como Desenvolvedor Full Stack, criando interfaces de alta conversão e sistemas corporativos robustos de ponta a ponta.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-12 col-lg-4 text-center">
+            <img
+              class="profile-img shadow-sm"
+              src="assets/img/foto.jpeg"
+              alt="Foto de perfil de Daniel Silva Ferraz Neto"
+            />
+            <div class="mt-3">
+              <span class="badge text-bg-primary me-1"
+                >Ciência da Computação</span
+              >
+              <span class="badge text-bg-secondary">UFLA</span>
             </div>
+          </div>
+          <div class="col-12 col-lg-8">
+            <h1 class="display-6 fw-semibold mb-3">
+              Olá! Eu sou
+              <span class="text-primary">Daniel Silva Ferraz Neto</span>
+            </h1>
+            <p class="lead text-secondary mb-4">
+              Desenvolvedor Full Stack (com foco em Front-end), estudante de
+              Ciência da Computação e apaixonado por criar produtos web
+              modernos.
+            </p>
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-primary" href="#projetos">
+                <i class="fa-solid fa-diagram-project me-2"></i>Ver projetos
+              </a>
+              <a class="btn btn-outline-primary" href="#contato">
+                <i class="fa-solid fa-envelope me-2"></i>Contato
+              </a>
+              <a
+                class="btn btn-outline-secondary"
+                href="https://github.com/Clofender"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i class="fa-brands fa-github me-2"></i>GitHub
+              </a>
+              <a
+                class="btn btn-outline-secondary"
+                href="https://www.linkedin.com/in/daniel-clofender"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i class="fa-brands fa-linkedin me-2"></i>LinkedIn
+              </a>
+            </div>
+            <hr class="my-4" />
+            <div class="row g-3">
+              <div class="col-12 col-md-6">
+                <div class="p-3 rounded-3 border bg-body-tertiary">
+                  <div class="d-flex align-items-center gap-2 mb-2">
+                    <i class="fa-solid fa-graduation-cap text-primary"></i>
+                    <strong>Curso</strong>
+                  </div>
+                  <p class="mb-0 text-secondary">
+                    Ciência da Computação - Universidade Federal de Lavras
+                    (UFLA). Técnico em Redes de Computadores pelo CEFET-MG.
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="p-3 rounded-3 border bg-body-tertiary">
+                  <div class="d-flex align-items-center gap-2 mb-2">
+                    <i class="fa-solid fa-bullseye text-primary"></i>
+                    <strong>Objetivo</strong>
+                  </div>
+                  <p class="mb-0 text-secondary">
+                    Consolidar minha carreira como Desenvolvedor Full Stack,
+                    criando interfaces de alta conversão e sistemas corporativos
+                    robustos de ponta a ponta.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </header>
 
     <main class="pb-5">
-        <!-- Sobre -->
-        <section id="sobre" class="py-4">
-            <div class="container">
-                <div class="mb-3">
-                    <h2 class="h4 mb-1">Sobre</h2>
-                    <p class="text-secondary mb-0">Uma breve descrição do estudante e trajetória.</p>
+      <!-- Sobre -->
+      <section id="sobre" class="py-4">
+        <div class="container">
+          <div class="mb-3">
+            <h2 class="h4 mb-1">Sobre</h2>
+            <p class="text-secondary mb-0">
+              Uma breve descrição do estudante e trajetória.
+            </p>
+          </div>
+          <div class="row g-4">
+            <div class="col-12 col-lg-7">
+              <div class="card shadow-sm">
+                <div class="card-body">
+                  <p class="mb-2">
+                    Sou estudante de Ciência da Computação na UFLA e atuo na
+                    OPER como Desenvolvedor Full Stack (Estagiário), com foco na
+                    construção de interfaces modernas e responsivas.
+                  </p>
+                  <p class="mb-0 text-secondary">
+                    Trabalho com Docker, NestJS, contratos de API e modelagem de
+                    banco de dados com Prisma. Tenho formação técnica em Redes
+                    de Computadores pelo CEFET-MG e experiência anterior em
+                    relacionamento com clientes e negócios.
+                  </p>
                 </div>
-                <div class="row g-4">
-                    <div class="col-12 col-lg-7">
-                        <div class="card shadow-sm">
-                            <div class="card-body">
-                                <p class="mb-2">
-                                    Sou estudante de Ciência da Computação na UFLA e atuo na OPER como Desenvolvedor Full Stack (Estagiário), com foco na construção de interfaces modernas e responsivas.
-                                </p>
-                                <p class="mb-0 text-secondary">
-                                    Trabalho com Docker, NestJS, contratos de API e modelagem de banco de dados com Prisma. Tenho formação técnica em Redes de Computadores pelo CEFET-MG e experiência anterior em relacionamento com clientes e negócios.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-5">
-                        <div class="card shadow-sm">
-                            <div class="card-body">
-                                <h3 class="h6 mb-3">Informações rápidas</h3>
-                                <ul class="list-unstyled mb-0">
-                                    <li class="d-flex gap-2 mb-2">
-                                        <i class="fa-solid fa-location-dot text-primary mt-1"></i>
-                                        <div><strong>Cidade:</strong> Lavras, MG</div>
-                                    </li>
-                                    <li class="d-flex gap-2 align-items-start mb-2">
-                                        <i class="fa-solid fa-language mt-1 text-primary"></i>
-                                        <div><strong>Idiomas:</strong> Português (nativo), Inglês (técnico)</div>
-                                    </li>
-                                    <li class="d-flex gap-2">
-                                        <i class="fa-solid fa-laptop-code text-primary mt-1"></i>
-                                        <div><strong>Área:</strong> Engenharia de Software / Full Stack</div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </section>
-        <!-- Habilidades -->
-        <section id="habilidades" class="py-4">
-            <div class="container">
-                <div class="section-title">
-                    <h2 class="h4 mb-1">Habilidades</h2>
-                    <p class="text-secondary mb-0">Tecnologias e competências.</p>
+            <div class="col-12 col-lg-5">
+              <div class="card shadow-sm">
+                <div class="card-body">
+                  <h3 class="h6 mb-3">Informações rápidas</h3>
+                  <ul class="list-unstyled mb-0">
+                    <li class="d-flex gap-2 mb-2">
+                      <i class="fa-solid fa-location-dot text-primary mt-1"></i>
+                      <div><strong>Cidade:</strong> Lavras, MG</div>
+                    </li>
+                    <li class="d-flex gap-2 align-items-start mb-2">
+                      <i class="fa-solid fa-language mt-1 text-primary"></i>
+                      <div>
+                        <strong>Idiomas:</strong> Português (nativo), Inglês
+                        (técnico)
+                      </div>
+                    </li>
+                    <li class="d-flex gap-2">
+                      <i class="fa-solid fa-laptop-code text-primary mt-1"></i>
+                      <div>
+                        <strong>Área:</strong> Engenharia de Software / Full
+                        Stack
+                      </div>
+                    </li>
+                  </ul>
                 </div>
-                <div class="row g-4 mt-1">
-                    <div class="col-12 col-lg-6">
-                        <div class="card shadow-sm h-100">
-                            <div class="card-body">
-                                <h3 class="h6">Tecnologias</h3>
-                                <div class="d-flex flex-wrap gap-2">
-                                     <span class="badge rounded-pill text-bg-primary">TypeScript</span>
-                                     <span class="badge rounded-pill text-bg-primary">React / Next.js</span>
-                                     <span class="badge rounded-pill text-bg-primary">Tailwind CSS</span>
-                                     <span class="badge rounded-pill text-bg-secondary">NestJS / Node.js</span>
-                                     <span class="badge rounded-pill text-bg-secondary">Prisma / SQLite</span>
-                                     <span class="badge rounded-pill text-bg-secondary">Docker / Git</span>
-                                     <span class="badge rounded-pill text-bg-secondary">Tauri / Rust</span>
-                                </div>
-                                <hr>
-                                <h3 class="h6">Competências</h3>
-                                <ul class="mb-0">
-                                        <li>Desenvolvimento web Full Stack</li>
-                                        <li>Contratos de API e modelagem de dados</li>
-                                        <li>UI/UX e layouts de alta conversão</li>
-                                        <li>Infraestrutura básica com Docker</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-6">
-                        <div class="card shadow-sm h-100">
-                            <div class="card-body">
-                                    <h3 class="h6">Nível de familiaridade</h3>
-                                <div class="mb-3">
-                                    <div class="d-flex justify-content-between">
-                                            <span>HTML</span><span class="text-secondary small">90%</span>
-                                    </div>
-                                        <div class="progress" role="progressbar" aria-label="HTML" aria-valuenow="90"
-                                        aria-valuemin="0" aria-valuemax="100">
-                                            <div class="progress-bar" style="width: 90%"></div>
-                                    </div>
-                                </div>
-                                <div class="mb-3">
-                                    <div class="d-flex justify-content-between">
-                                            <span>CSS / Tailwind CSS</span><span class="text-secondary small">85%</span>
-                                    </div>
-                                        <div class="progress" role="progressbar" aria-label="CSS / Tailwind CSS" aria-valuenow="85"
-                                        aria-valuemin="0" aria-valuemax="100">
-                                            <div class="progress-bar" style="width: 85%"></div>
-                                    </div>
-                                </div>
-                                <div class="mb-0">
-                                    <div class="d-flex justify-content-between">
-                                            <span>JavaScript / TypeScript</span><span class="text-secondary small">85%</span>
-                                    </div>
-                                        <div class="progress" role="progressbar" aria-label="JavaScript / TypeScript" aria-valuenow="85"
-                                        aria-valuemin="0" aria-valuemax="100">
-                                            <div class="progress-bar" style="width: 85%"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+      <!-- Habilidades -->
+      <section id="habilidades" class="py-4">
+        <div class="container">
+          <div class="section-title">
+            <h2 class="h4 mb-1">Habilidades</h2>
+            <p class="text-secondary mb-0">Tecnologias e competências.</p>
+          </div>
+          <div class="row g-4 mt-1">
+            <div class="col-12 col-lg-6">
+              <div class="card shadow-sm h-100">
+                <div class="card-body">
+                  <h3 class="h6">Tecnologias</h3>
+                  <div class="d-flex flex-wrap gap-2">
+                    <span class="badge rounded-pill text-bg-primary"
+                      >TypeScript</span
+                    >
+                    <span class="badge rounded-pill text-bg-primary"
+                      >React / Next.js</span
+                    >
+                    <span class="badge rounded-pill text-bg-primary"
+                      >Tailwind CSS</span
+                    >
+                    <span class="badge rounded-pill text-bg-secondary"
+                      >NestJS / Node.js</span
+                    >
+                    <span class="badge rounded-pill text-bg-secondary"
+                      >Prisma / SQLite</span
+                    >
+                    <span class="badge rounded-pill text-bg-secondary"
+                      >Docker / Git</span
+                    >
+                    <span class="badge rounded-pill text-bg-secondary"
+                      >Tauri / Rust</span
+                    >
+                  </div>
+                  <hr />
+                  <h3 class="h6">Competências</h3>
+                  <ul class="mb-0">
+                    <li>Desenvolvimento web Full Stack</li>
+                    <li>Contratos de API e modelagem de dados</li>
+                    <li>UI/UX e layouts de alta conversão</li>
+                    <li>Infraestrutura básica com Docker</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="card shadow-sm h-100">
+                <div class="card-body">
+                  <h3 class="h6">Nível de familiaridade</h3>
+                  <div class="mb-3">
+                    <div class="d-flex justify-content-between">
+                      <span>HTML</span
+                      ><span class="text-secondary small">90%</span>
+                    </div>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="HTML"
+                      aria-valuenow="90"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div class="progress-bar" style="width: 90%"></div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <div class="d-flex justify-content-between">
+                      <span>CSS / Tailwind CSS</span
+                      ><span class="text-secondary small">85%</span>
+                    </div>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="CSS / Tailwind CSS"
+                      aria-valuenow="85"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div class="progress-bar" style="width: 85%"></div>
+                    </div>
+                  </div>
+                  <div class="mb-0">
+                    <div class="d-flex justify-content-between">
+                      <span>JavaScript / TypeScript</span
+                      ><span class="text-secondary small">85%</span>
+                    </div>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="JavaScript / TypeScript"
+                      aria-valuenow="85"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div class="progress-bar" style="width: 85%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <!-- Projetos -->
-        <section id="projetos" class="py-4">
-            <div class="container">
-                <div class="section-title">
-                    <h2 class="h4 mb-1">Projetos</h2>
-                    <p class="text-secondary mb-0">Alguns trabalhos já desenvolvidos.</p>
+      <!-- Projetos -->
+      <section id="projetos" class="py-4">
+        <div class="container">
+          <div class="section-title">
+            <h2 class="h4 mb-1">Projetos</h2>
+            <p class="text-secondary mb-0">
+              Alguns trabalhos já desenvolvidos.
+            </p>
+          </div>
+          <div class="row g-4 mt-1">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card shadow-sm h-100">
+                <div class="card-body d-flex flex-column">
+                  <div
+                    class="d-flex align-items-start justify-content-between gap-2"
+                  >
+                    <h3 class="h6 mb-1">Desafio OperData - Pombo Correio</h3>
+                    <span class="badge text-bg-secondary">NestJS</span>
+                    <span class="badge text-bg-secondary">React</span>
+                    <span class="badge text-bg-secondary">Docker</span>
+                  </div>
+                  <p class="text-secondary small">
+                    Aplicação fullstack para gerenciar um serviço lúdico de
+                    delivery aéreo utilizando pombos-correio.
+                  </p>
+                  <ul class="small mb-4">
+                    <li>API REST e regras de negócio</li>
+                    <li>Interface reativa</li>
+                    <li>Containerização ponta a ponta</li>
+                  </ul>
+                  <div class="mt-auto d-flex gap-2">
+                    <a
+                      class="btn btn-sm btn-outline-primary"
+                      href="https://github.com/Clofender/Desafio-OperData-PomboCorreio"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <i class="fa-brands fa-github me-1"></i>Repositório
+                    </a>
+                    <span class="text-secondary small align-self-center"
+                      >Executado localmente via Docker</span
+                    >
+                  </div>
                 </div>
-                <div class="row g-4 mt-1">
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card shadow-sm h-100">
-                            <div class="card-body d-flex flex-column">
-                                <div class="d-flex align-items-start justify-content-between gap-2">
-                                    <h3 class="h6 mb-1">Desafio OperData - Pombo Correio</h3>
-                                    <span class="badge text-bg-secondary">NestJS</span>
-                                    <span class="badge text-bg-secondary">React</span>
-                                    <span class="badge text-bg-secondary">Docker</span>
-                                </div>
-                                <p class="text-secondary small">
-                                    Aplicação fullstack para gerenciar um serviço lúdico de delivery aéreo utilizando pombos-correio.
-                                </p>
-                                <ul class="small mb-4">
-                                    <li>API REST e regras de negócio</li>
-                                    <li>Interface reativa</li>
-                                    <li>Containerização ponta a ponta</li>
-                                </ul>
-                                <div class="mt-auto d-flex gap-2">
-                                    <a class="btn btn-sm btn-outline-primary" href="https://github.com/Clofender/Desafio-OperData-PomboCorreio" target="_blank" rel="noreferrer">
-                                        <i class="fa-brands fa-github me-1"></i>Repositório
-                                    </a>
-                                    <span class="text-secondary small align-self-center">Executado localmente via Docker</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card shadow-sm h-100">
-                            <div class="card-body d-flex flex-column">
-                                <div class="d-flex align-items-start justify-content-between gap-2">
-                                    <h3 class="h6 mb-1">Projetos Full Stack - OPER</h3>
-                                    <span class="badge text-bg-secondary">HTML</span>
-                                    <span class="badge text-bg-secondary">Bootstrap</span>
-                                    <span class="badge text-bg-secondary">Prisma</span>
-                                </div>
-                                <p class="text-secondary small">
-                                    Desenvolvimento de sistemas corporativos de ponta a ponta durante o estágio na OPER.
-                                </p>
-                                <ul class="small mb-4">
-                                    <li>Contratos de API</li>
-                                    <li>Modelagem com schema.prisma</li>
-                                    <li>Integração de stacks modernas</li>
-                                </ul>
-                                <div class="mt-auto d-flex gap-2">
-                                    <span class="text-secondary small align-self-center">Projeto privado</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card shadow-sm h-100">
-                            <div class="card-body d-flex flex-column">
-                                <div class="d-flex align-items-start justify-content-between gap-2">
-                                    <h3 class="h6 mb-1">SoundPad Remastered</h3>
-                                    <span class="badge text-bg-secondary">Tauri / Rust</span>
-                                </div>
-                                <p class="text-secondary small">
-                                    Releitura moderna, leve e open-source de um Soundboard clássico para desktop.
-                                </p>
-                                <ul class="small mb-4">
-                                    <li>Atalhos globais com Rust</li>
-                                    <li>Reprodução de áudio sem latência</li>
-                                    <li>WebView2 e dispositivos virtuais</li>
-                                </ul>
-                                <div class="mt-auto d-flex gap-2">
-                                    <a class="btn btn-sm btn-outline-primary" href="https://github.com/Clofender/SoundPad-Remastered" target="_blank" rel="noreferrer">
-                                        <i class="fa-brands fa-github me-1"></i>Repositório
-                                    </a>
-                                    <span class="text-secondary small align-self-center">Aplicação desktop</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </section>
-        <!-- Interesses -->
-        <section id="interesses" class="py-4">
-            <div class="container">
-                <div class="section-title">
-                    <h2 class="h4 mb-1">Interesses</h2>
-                    <p class="text-secondary mb-0">Áreas que eu gosto de estudar/pesquisar.</p>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card shadow-sm h-100">
+                <div class="card-body d-flex flex-column">
+                  <div
+                    class="d-flex align-items-start justify-content-between gap-2"
+                  >
+                    <h3 class="h6 mb-1">Projetos Full Stack - OPER</h3>
+                    <span class="badge text-bg-secondary">HTML</span>
+                    <span class="badge text-bg-secondary">Bootstrap</span>
+                    <span class="badge text-bg-secondary">Prisma</span>
+                  </div>
+                  <p class="text-secondary small">
+                    Desenvolvimento de sistemas corporativos de ponta a ponta
+                    durante o estágio na OPER.
+                  </p>
+                  <ul class="small mb-4">
+                    <li>Contratos de API</li>
+                    <li>Modelagem com schema.prisma</li>
+                    <li>Integração de stacks modernas</li>
+                  </ul>
+                  <div class="mt-auto d-flex gap-2">
+                    <span class="text-secondary small align-self-center"
+                      >Projeto privado</span
+                    >
+                  </div>
                 </div>
-                <div class="row g-4 mt-1">
-                    <div class="col-12 col-lg-6">
-                        <div class="card shadow-sm h-100">
-                            <div class="card-body">
-                                <ul class="mb-0">
-                                    <li>Arquitetura de Software Front-end e Full Stack</li>
-                                    <li>UI/UX e layouts de alta conversão</li>
-                                    <li>Desenvolvimento desktop com Tauri/Rust</li>
-                                    <li>Ferramentas e integrações com Inteligência Artificial</li>
-                                    <li>Gestão do conhecimento e transformação digital</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-6">
-                        <div class="card shadow-sm h-100">
-                            <div class="card-body">
-                                <h3 class="h6">Atividades</h3>
-                                <p class="text-secondary mb-2">
-                                    Desenvolvo projetos com React/Node e ferramentas modernas. Fora da tecnologia, pratico musculação e vôlei, jogo Valorant e cultivo plantas.
-                                </p>
-                                <div class="d-flex flex-wrap gap-2">
-                                    <span class="badge text-bg-light border"><i
-                                            class="fa-solid fa-book me-1"></i>Estudos</span>
-                                    <span class="badge text-bg-light border"><i
-                                            class="fa-solid fa-people-group me-1"></i>Trabalho em equipe</span>
-                                    <span class="badge text-bg-light border"><i
-                                            class="fa-solid fa-terminal me-1"></i>Projetos práticos</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </section>
-        <!-- Contato -->
-        <section id="contato" class="py-4">
-            <div class="container">
-                <div class="section-title">
-                    <h2 class="h4 mb-1">Contato</h2>
-                    <p class="text-secondary mb-0">Como falar comigo.</p>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card shadow-sm h-100">
+                <div class="card-body d-flex flex-column">
+                  <div
+                    class="d-flex align-items-start justify-content-between gap-2"
+                  >
+                    <h3 class="h6 mb-1">SoundPad Remastered</h3>
+                    <span class="badge text-bg-secondary">Tauri / Rust</span>
+                  </div>
+                  <p class="text-secondary small">
+                    Releitura moderna, leve e open-source de um Soundboard
+                    clássico para desktop.
+                  </p>
+                  <ul class="small mb-4">
+                    <li>Atalhos globais com Rust</li>
+                    <li>Reprodução de áudio sem latência</li>
+                    <li>WebView2 e dispositivos virtuais</li>
+                  </ul>
+                  <div class="mt-auto d-flex gap-2">
+                    <a
+                      class="btn btn-sm btn-outline-primary"
+                      href="https://github.com/Clofender/SoundPad-Remastered"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <i class="fa-brands fa-github me-1"></i>Repositório
+                    </a>
+                    <span class="text-secondary small align-self-center"
+                      >Aplicação desktop</span
+                    >
+                  </div>
                 </div>
-                <div class="row g-4 mt-1">
-                    <div class="col-12 col-lg-6">
-                        <div class="card shadow-sm">
-                            <div class="card-body">
-                                <ul class="list-unstyled mb-0">
-                                    <li class="d-flex gap-2 align-items-center mb-2">
-                                        <i class="fa-solid fa-envelope text-primary"></i>
-                                        <a href="mailto:danielsfn1@gmail.com">danielsfn1@gmail.com</a>
-                                    </li>
-                                    <li class="d-flex gap-2 align-items-center mb-2">
-                                        <i class="fa-brands fa-github text-primary"></i>
-                                        <a class="link-underline link-underline-opacity-0" href="https://github.com/Clofender"
-                                            target="_blank" rel="noreferrer">
-                                            github.com/Clofender
-                                        </a>
-                                    </li>
-                                    <li class="d-flex gap-2 align-items-center">
-                                        <i class="fa-brands fa-linkedin text-primary"></i>
-                                        <a class="link-underline link-underline-opacity-0"
-                                            href="https://www.linkedin.com/in/daniel-clofender" target="_blank" rel="noreferrer">
-                                            linkedin.com/in/daniel-clofender
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-6">
-                        <div class="card shadow-sm">
-                            <div class="card-body">
-                                <ul class="list-unstyled mb-0">
-                                    <li class="d-flex gap-2 align-items-center mb-2">
-                                        <i class="fa-brands fa-instagram text-primary"></i>
-                                        <a class="link-underline link-underline-opacity-0" href="https://instagram.com/daniel_ferraz"
-                                            target="_blank" rel="noreferrer">
-                                            instagram.com/daniel_ferraz
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+      <!-- Interesses -->
+      <section id="interesses" class="py-4">
+        <div class="container">
+          <div class="section-title">
+            <h2 class="h4 mb-1">Interesses</h2>
+            <p class="text-secondary mb-0">
+              Áreas que eu gosto de estudar/pesquisar.
+            </p>
+          </div>
+          <div class="row g-4 mt-1">
+            <div class="col-12 col-lg-6">
+              <div class="card shadow-sm h-100">
+                <div class="card-body">
+                  <ul class="mb-0">
+                    <li>Arquitetura de Software Front-end e Full Stack</li>
+                    <li>UI/UX e layouts de alta conversão</li>
+                    <li>Desenvolvimento desktop com Tauri/Rust</li>
+                    <li>
+                      Ferramentas e integrações com Inteligência Artificial
+                    </li>
+                    <li>Gestão do conhecimento e transformação digital</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="card shadow-sm h-100">
+                <div class="card-body">
+                  <h3 class="h6">Atividades</h3>
+                  <p class="text-secondary mb-2">
+                    Desenvolvo projetos com React/Node e ferramentas modernas.
+                    Fora da tecnologia, pratico musculação e vôlei, jogo
+                    Valorant e cultivo plantas.
+                  </p>
+                  <div class="d-flex flex-wrap gap-2">
+                    <span class="badge text-bg-light border"
+                      ><i class="fa-solid fa-book me-1"></i>Estudos</span
+                    >
+                    <span class="badge text-bg-light border"
+                      ><i class="fa-solid fa-people-group me-1"></i>Trabalho em
+                      equipe</span
+                    >
+                    <span class="badge text-bg-light border"
+                      ><i class="fa-solid fa-terminal me-1"></i>Projetos
+                      práticos</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contato -->
+      <section id="contato" class="py-4">
+        <div class="container">
+          <div class="section-title">
+            <h2 class="h4 mb-1">Contato</h2>
+            <p class="text-secondary mb-0">Como falar comigo.</p>
+          </div>
+          <div class="row g-4 mt-1">
+            <div class="col-12 col-lg-6">
+              <div class="card shadow-sm">
+                <div class="card-body">
+                  <ul class="list-unstyled mb-0">
+                    <li class="d-flex gap-2 align-items-center mb-2">
+                      <i class="fa-solid fa-envelope text-primary"></i>
+                      <a href="mailto:danielsfn1@gmail.com"
+                        >danielsfn1@gmail.com</a
+                      >
+                    </li>
+                    <li class="d-flex gap-2 align-items-center mb-2">
+                      <i class="fa-brands fa-github text-primary"></i>
+                      <a
+                        class="link-underline link-underline-opacity-0"
+                        href="https://github.com/Clofender"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        github.com/Clofender
+                      </a>
+                    </li>
+                    <li class="d-flex gap-2 align-items-center">
+                      <i class="fa-brands fa-linkedin text-primary"></i>
+                      <a
+                        class="link-underline link-underline-opacity-0"
+                        href="https://www.linkedin.com/in/daniel-clofender"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        linkedin.com/in/daniel-clofender
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="card shadow-sm">
+                <div class="card-body">
+                  <ul class="list-unstyled mb-0">
+                    <li class="d-flex gap-2 align-items-center mb-2">
+                      <i class="fa-brands fa-instagram text-primary"></i>
+                      <a
+                        class="link-underline link-underline-opacity-0"
+                        href="https://instagram.com/daniel_ferraz"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        instagram.com/daniel_ferraz
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- Rodapé da Página -->
-<footer class="border-top py-4">
-    <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+    <footer class="border-top py-4">
+      <div
+        class="container d-flex flex-column flex-md-row justify-content-between gap-2"
+      >
         <small class="text-secondary">© 2026 Daniel Silva Ferraz Neto</small>
         <small class="text-secondary">Desenvolvido com Bootstrap 5.</small>
-    </div>
-</footer>
+      </div>
+    </footer>
     <!-- Bootstrap JS (necessário para navbar colapsável) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- JS do projeto -->
     <script src="assets/js/script.js"></script>
-</body>
-
+  </body>
 </html>
