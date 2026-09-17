@@ -42,7 +42,7 @@ pagina-pessoal-gac116/
 │   ├── index.html
 │   └── assets/
 │       ├── css/styles.css
-│       ├── img/foto.svg
+│       ├── img/foto.jpeg
 │       └── js/script.js
 ├── page/                      # Versão Tailwind CSS
 │   ├── index.html
