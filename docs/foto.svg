@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" viewBox="0 0 320 320">
-  <rect width="320" height="320" rx="160" fill="#e9ecef"/>
-  <circle cx="160" cy="125" r="52" fill="#adb5bd"/>
-  <path d="M70 280c20-56 60-86 90-86s70 30 90 86" fill="#adb5bd"/>
-  <text x="160" y="305" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#6c757d">
-    Substitua por sua foto
-  </text>
-</svg>

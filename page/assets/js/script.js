@@ -1,40 +1,45 @@
-// Seleciona elementos
-var root = document.documentElement;
-var btn = document.getElementById("themeToggle");
+const root = document.documentElement;
+const themeButton = document.getElementById('themeToggle');
+const menuButton = document.getElementById('menuToggle');
+const menu = document.getElementById('navContent');
 
-// Função para aplicar o tema
 function applyTheme(theme) {
-    // Define o tema no HTML
-    root.setAttribute("data-bs-theme", theme);
-    // Salva no localStorage
-    localStorage.setItem("theme", theme);
-    // Se o botão existir, atualiza o ícone
-    if (btn) {
-        if (theme === "dark") {
-            btn.innerHTML = '<i class="fa-solid fa-sun"></i>';
-        } else {
-            btn.innerHTML = '<i class="fa-solid fa-moon"></i>';
-        }
+    const isDark = theme === 'dark';
+    root.classList.toggle('dark', isDark);
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+
+    if (themeButton) {
+        themeButton.innerHTML = isDark ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
+        themeButton.setAttribute('aria-label', isDark ? 'Ativar tema claro' : 'Ativar tema escuro');
     }
 }
 
-// Verifica se já existe tema salvo
-var savedTheme = localStorage.getItem("theme");
+applyTheme(localStorage.getItem('theme') || 'light');
 
-if (savedTheme) {
-    applyTheme(savedTheme);
-} else {
-    applyTheme("light");
-}
-
-// Evento de clique no botão
-if (btn) {
-    btn.addEventListener("click", function () {
-        var currentTheme = root.getAttribute("data-bs-theme");
-        if (currentTheme === "light") {
-            applyTheme("dark");
-        } else {
-            applyTheme("light");
-        }
+if (themeButton) {
+    themeButton.addEventListener('click', () => {
+        applyTheme(root.classList.contains('dark') ? 'light' : 'dark');
     });
 }
+
+if (menuButton && menu) {
+    menuButton.addEventListener('click', () => {
+        const isOpen = !menu.classList.contains('hidden');
+        menu.classList.toggle('hidden', isOpen);
+        menuButton.setAttribute('aria-expanded', String(!isOpen));
+        menuButton.setAttribute('aria-label', isOpen ? 'Abrir menu' : 'Fechar menu');
+    });
+}
+
+if (menu) {
+    menu.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => {
+            menu.classList.add('hidden');
+            if (menuButton) {
+                menuButton.setAttribute('aria-expanded', 'false');
+            }
+        });
+    });
+}
+
+document.getElementById('year').textContent = new Date().getFullYear();

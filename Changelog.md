@@ -1,11 +1,11 @@
 # Registro de Alterações
 
-Todas as mudanças neste projeto serão documentadas neste arquivo.
+Todas as mudanças relevantes deste projeto serão documentadas neste arquivo.
 
-## 2026-1
+## 2026-09-17
 
-* Escrita inicial do tutorial.
-
-## 2026-2
-
-* Ajuste seção de créditos e referências.
+* Finalização da Página Pessoal para a atividade GAC116.
+* Organização das versões Bootstrap e Tailwind CSS.
+* Adição de tema claro/escuro, menu responsivo e entrada para GitHub Pages.
+* Remoção dos materiais didáticos e arquivos duplicados do tutorial.
+* Atualização da documentação do projeto.
